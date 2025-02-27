@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/server">
+        <div>
+            <label for="Username">Username :</label>
+            <input type="text" placeholder="Enter Username" id="Username" name="user">
+        </div>
+        <div>
+            <label for="Password">Password :</label>
+            <input type="password" placeholder="Password" id="Password" name="pass">
+        </div>
+        <div>
+            <label for="Age">Enter Age :</label>
+            <input type="number" placeholder="Enter Your Age" id="Age" name="age">
+        </div>
+        <button>Submit</button>
+        <button type="reset">Reset</button>
+        
+        <hr>
+        <form action="https://www.youtube.com/results">
+            <input type="text" name="search_query" placeholder="Search in youtube">
+            <button>Submit</button>
+        </form>
+
+        <hr>
+        <form action="/server">
+            <input type="checkbox" id="age" name="age">
+            <label for="age">I am 18+</label>
+            <button>Submit</button>
+        </form>
+        <br>
+        <hr>
+
+        <form action="/server">
+            Which fruit do you want to eat?
+            <br>
+            <input type="radio" id="apple" name="fruit" value="apple">
+            <label for="apple">Apple</label>
+            <input type="radio" id="Banana" name="fruit" value="Banana">
+            <label for="Banana">Banana</label>
+            <input type="radio" id="orange" name="fruit" value="orange">
+            <label for="orange">Orange</label>
+            <br>
+            <button>Submit</button>
+        </form>
+
+        <hr> <br>
+
+        <form action="/server">
+            choose your subject :
+            <input type="checkbox" id="math" name="subject" value="math">
+            <label for="math">Math</label>
+            <input type="checkbox" id="english" name="subject" value="english">
+            <label for="english">English</label>
+            <br>
+            <button>Submit</button>
+        </form>
+
+        <br><hr>
+        <form action="/server">
+            Which is your stream: 
+            <select name="stream" id="stream">
+                <option >Select your Option</option>
+                <option value="Developer">Developer</option>
+                <option value="Student" selected>Student</option>
+            </select>
+            <br>
+            <button>Submit</button>
+        </form>
+
+
+    </form>
+</body>
+</html>

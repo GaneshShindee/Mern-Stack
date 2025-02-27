@@ -1,0 +1,47 @@
+div{
+    height: 200px;
+    width: 400px;
+    background-color: pink;
+    animation-name: color;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    /* animation-name: coloranimate; */
+}
+
+@keyframes fontanimation{
+    from {
+        font-size: 20px;
+        background-color: red;
+    }
+    to{
+        font-size: 40px;
+        background-color:green;
+        border-radius: 15px;
+    }
+}
+
+@keyframes coloranimate{
+    from{
+        background-color: green;
+    }
+    to{
+        background-color: white;
+    }
+}
+
+@keyframes color{
+    0%{background-color: red;}
+    10%{background-color: green;}
+    20%{background-color: yellow;}
+    30%{background-color: gray;}
+    40%{background-color: blue;}
+    50%{background-color: orange;}
+    60%{background-color: pink;}
+    70%{background-color: goldenrod;}
+    80%{background-color: khaki;}
+    90%{background-color: lightcoral;}
+    100%{background-color: mediumaquamarine;}
+}

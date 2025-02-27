@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center ; */
+}
+
+body div{
+    width: 25rem;
+    /* height: 25rem; */
+    padding: 2rem;
+    background-color: red;
+}
+body h1{
+    display: flex;
+}
+body div input{
+    background-color:white;
+    border: 3px solid black;
+    border-radius: 1rem;
+    height: 2rem;
+    width: 10rem;
+}
+
+
+.strikethrough{
+    text-decoration: line-through;
+}
+
+#addBtn{
+    /* background-color: rebeccapurple; */
+    width: 3rem;
+    border-radius: 1rem;
+    border: 2px solid black;
+}

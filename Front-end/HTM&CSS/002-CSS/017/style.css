@@ -1,0 +1,29 @@
+*{
+    background-color: #E17564;
+    color: #09122C;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+
+}
+
+p{
+    text-align: left;
+}
+
+
+h1::first-letter{
+    color: yellow;
+}
+
+button{
+    text-align: center;
+    background-color: white;
+    color: Black;
+}
+
+button::after{
+    color: red;
+}

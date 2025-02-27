@@ -1,0 +1,379 @@
+.lato-regular {
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  /* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", serif;
+    /* text-align: center; */
+    /* justify-content: center; */
+
+}
+/* body{
+    max-width: 1200px;
+    padding: 0 4%;
+    display: block;
+    justify-content: center;
+} */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;  /* Centers the container */
+    align-items: flex-start;      /* Centers content vertically */
+    height: auto;
+    background-color: white;
+}
+.container {
+    width: 1200px;  /* Set a fixed or max width */
+    max-width: 98%; 
+    background: white;
+    /* padding: 20px; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    border-radius: 10px;
+}
+
+#nav{
+    max-width: 1200px;
+    position: fixed;
+    width: 98%;
+    height: 75px;
+    /* background-color: white; */
+    display: flex;
+    justify-content: space-between;
+    /* padding: 10px 10px; */
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.836);
+}
+
+#nav img{
+    padding: 15px;
+    width: cover;
+}
+#nav .nav-options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 60px 0 0; */
+}
+#nav .nav-options span{
+    margin-right: 10px;
+    padding: 10px 11px;
+    color: black;
+    font-weight: 600;
+    opacity: .8;
+}
+#nav .nav-options span:first-child{
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color:#6674CC;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+@media(max-width=1200px){
+    #nav{
+        display: block;
+        width: 1200px;
+    }
+}
+
+
+.animated-text{
+    font-size: 22px;
+    font-weight: 400;
+    min-width: 280px;
+}
+
+.animated-text span{
+    position: relative;
+    margin-left: 20px;
+}
+
+.animated-text span::before{
+    content: "Youtuber";
+    color:black;
+    animation: words 16s infinite;
+}
+
+.animated-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: white;
+    border-left: 2px solid black;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #ff7f5000;
+    }
+}
+
+@keyframes words {
+    0%,25%{
+        content: "Delta - Web Development";
+    }
+    26%,50%{
+        content: "C++ DSA";
+    }
+    51%,75%{
+        content: "Alpha-DSA";
+    }
+    76%,100%{
+        content: "Delta- Web Devlopment";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+
+
+#main-content{
+    margin-top: 75px;
+    max-width: 1200px;
+    /* width: 95%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page1{
+    display: flex;
+    width: 100%;
+}
+
+.box{
+    width: 50%; /* Each div takes exactly 50% */
+    color: white;
+    padding: 100px 0;
+    /* text-align: center; */
+    font-size: 32px;
+    /* border: 2px solid white; */
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: red; */
+
+
+}
+@media (max-width: 990px) {
+    .page1 {
+        flex-direction: column; /* Stack divs vertically */
+        align-items: center;
+    }
+    .box{
+        width: 95%; /* Make divs take 90% width */
+        margin-bottom: 2px; 
+        margin: 0;
+        padding: 0;
+    }
+    .page1-img{
+        width: 95%;
+        background-size: cover;
+        margin-left: 0;
+         padding: 0;
+         margin-top: 0;
+    }
+    .image{
+        margin-left: 0;
+        background-repeat: no-repeat;
+        width: 95%;
+        height: auto;
+        background-repeat: no-repeat;
+         margin-left: 0;
+         padding: 0;
+         margin-top: 0;
+    }
+    .nav-options span{
+        display: none;
+    }
+
+}
+
+
+@media (min-width: 990px){
+    .nav-options .menu-option{
+        display: contents;
+    }
+}
+
+.box-inside{
+    padding: 0 25px;
+}
+.page1-heading .first-head{
+    color: black;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+.page1-heading .second-head{
+    color: #364BC5;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.page1-subheading {
+    font-size: 22px;
+    margin: 20px 0 3px;
+    color: black;
+}
+
+
+.page1-button button{
+    width: 310px;
+    height: 60px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #364BC5;
+    color: white;
+    font-weight: 700;
+    margin-top: 25px;
+    border: #364BC5;
+}
+
+
+.page1-img{
+    padding: 80px 0;
+    height: 90vh;
+}
+
+.image{
+    background: url(https://lwfiles.mycourse.app/62a6cd5e1e9e2fbf212d608d-public/fcc79fff0a31cd4c6290d3d3ada29edf.png);
+    background-size: contain;
+    width: 92%;
+    height:100vw;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.abc{
+    margin: 25px 0 15px 0;
+}
+
+
+
+
+
+
+/* first page is done now
+now  */
+
+
+.mainpart2{
+    /* width: ; */
+    max-width: none;
+    background-color: #505BA0;
+    
+    font-size: 1.5rem;
+    color: white;
+    
+}
+
+.pophead{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 0 .5rem 0;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.popcount{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #6674CC;
+    text-align: center;
+
+    margin-bottom: 1rem;
+    padding: .9rem 0 1.2rem  0;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+    
+}
+
+.pubbox{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    padding: .1rem;
+    margin-top: .4rem;
+}
+
+.countmessage{
+    font-size: 1rem;
+}
+
+.newbatch{
+    margin: 3rem 0;
+    display: flex;
+    text-align: center;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.newbatch #newbatchhead span{
+    color: #364BC5;
+    /* background-color: red; */
+    font-size: 1.1rem;
+    font-weight: 600;
+    opacity: .8;
+}
+
+.newbatch #newbatchsecondhead {
+    color:BLACK;
+    /* background-color: red; */
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.newbatch #newbatchthirdhead {
+    color:BLACK;
+    /* background-color: red; */
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+#newbatchbutton {
+    margin-top: 1.5rem;
+}
+#newbatchbutton button{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: .9rem 1.7rem;
+    background-color: #364BC5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 430px){
+    .mainpart2{
+        margin-top: -150px;
+    }
+}

@@ -1,0 +1,13 @@
+h1{
+    background-color: yellow;
+    border: 2px solid black;
+}
+
+@media (width:400px){
+    div{
+        background-color: red;
+    }
+    h1{
+        background-color: red;
+    }
+}

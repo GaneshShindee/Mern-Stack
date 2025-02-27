@@ -1,0 +1,24 @@
+body{
+    align-self: start;
+}
+
+.card{
+    height: 220px;
+    width: 200px;
+    background-color:cadetblue;
+    border: 1px solid cadetblue;
+    border-radius: 15px;
+    display: inline-block;
+    /* position: relative:fixed; */
+}
+img{
+    width: 100%;
+    opacity: 75%;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.card:hover{
+    height: 250px;
+    width: 220px;
+    transition: ;
+}
