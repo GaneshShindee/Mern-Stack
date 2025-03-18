@@ -119,24 +119,76 @@
 //     })
 
 
-let h=document.querySelector("h1")
+// let h=document.querySelector("h1")
 
-function changeColor(color,delay){
-    new Promise((resolve)=>{
-        setTimeout(()=>{
-            h.style.color=color;
-            resolve("color changed")
-        },delay) ;
-    })
-}
+// function changeColor(color,delay){
+//     new Promise((resolve)=>{
+//         setTimeout(()=>{
+//             h.style.color=color;
+//             resolve("color changed")
+//         },delay) ;
+//     })
+// }
 
 
-changeColor("red",1000,()=>{
-    changeColor("yellow",1000,()=>{
-        changeColor("green",1000),()=>{
-            changeColor("pink",1000,()=>{
-                changeColor("purple",1000)
-            })
-        };
-    });
-});
+// changeColor("red",1000,()=>{
+//     changeColor("yellow",1000,()=>{
+//         changeColor("green",1000),()=>{
+//             changeColor("pink",1000,()=>{
+//                 changeColor("purple",1000)
+//             })
+//         };
+//     });
+// });
+
+
+// function savetodb(data){
+//     return new Promise((resolve,reject)=>{
+//         let internetSpeed=Math.floor(Math.random()*10)+1;
+//         if(internetSpeed>1){
+//             resolve("success: data saved");
+//         }else{
+//             reject("failure:data not saved");
+//         }
+//     })
+// }
+// savetodb("apna college")
+//     .then((result)=>{
+//     console.log("Promise was resolved for data 1");
+//     console.log("result of promise: "+result)
+//     return savetodb("apna college 2")
+//     })  
+//     .then((result)=>{
+//         console.log("Promise was resolved for data 2")
+//         console.log("result of promise: "+result)
+//         return savetodb("apna college 3")
+//     })
+//     .then((result)=>{
+//         console.log("Promise was resolved for data 3")
+//         console.log("result of promise: "+result)
+
+//     })
+//     .catch((error)=>{
+//     console.log("promise was rejected")
+//     console.log("error of promise"+error)
+// })
+
+
+// function getnum(){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             let num= Math.floor(Math.random()*5)+1;
+//             console.log(num);
+//             resolve();
+//         },1000)
+//     })
+// }
+
+// async function demo(){
+//     await getnum();
+//     await getnum();
+//     await getnum();
+//     await getnum();
+// }
+
+
